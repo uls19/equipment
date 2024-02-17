@@ -1,23 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Onest:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/style.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <div class="mask">
         <div class="loader"></div>
     </div>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
-</main> 
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <a href="./index.html" class="header__logo">
+                    <h2 class="logo__title">СКАЙ</h2>
+                    <p class="logo__text">прокат инвентаря</p>
+                </a>
+                <ul class="header__menu">
+                    <li class="header__list"><a href="#!">Прокат инвентаря</a></li>
+                    <li class="header__list"><a href="#!">Каток</a></li>
+                    <li class="header__list"><a href="#!">Кафе</a></li>
+                    <li class="header__list"><a href="#!">Сервис</a></li>
+                    <li class="header__list"><a href="#!">Прайс-лист</a></li>
+                    <li class="header__list"><a href="#!">Контакты</a></li>
+                </ul>
+                <div class="header__timetable">Ежедневно 10.00-22.00</div>
+                <a class="header__phone" href="#!"><img class="header__phone-image" src="./img/phone.svg"
+                            alt="phone"></a>
+            </div>
+            <div class="header__main">
+                <div class="header__box">
+                    <h2 class="header__box-title">Аренда спортивного инвентаря и снаряжения для <span>активного
+                            отдыха</span></h2>
+                    <p class="header__box-text">Пункт по прокату спортивного инвентаря в Перми «Шторм» — это широкий
+                        выбор экипировки и оборудования для занятия спортом на улице. </p>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__items header__item1">
+                    <h3 class="header__item-title">Выгодные условия</h3>
+                    <p class="header__item-text">Прокат велосипедов, удобное расположение</p>
+                </div>
+                <div class="header__items header__item2">
+                    <h3 class="header__item-title">Приемлемые цены</h3>
+                    <p class="header__item-text">Прокат велосипедов, удобное расположение</p>
+                </div>
+                <div class="header__items header__item3">
+                    <h3 class="header__item-title">Удобное местоположение</h3>
+                    <p class="header__item-text">Прокат велосипедов, удобное расположение</p>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section__rent-summer">
+              <h3 class="section__header summer__header">Прокат <span>летнего инвентаря</span></h3> 
+              <div class="section__summer-info">
+                <div class="summer-info__items">
+                    <div class="summer-info__item1">
+                        <a class="info__items-link" href="#!"></a>
+                    </div>
+                    <div class="summer-info__items-bottom">
+                        <h3 class="summer-info__title">Велосипеды</h3>
+                        <p class="summer-info__text">Прокат велосипедов, удобное расположение</p>
+                    </div>
+                </div>
+               
+                <div class="summer-info__items">
+                    <div class="summer-info__item2">
+                        <a class="info__items-link" href="#!"></a>
+                    </div>
+                    <div class="summer-info__items-bottom">
+                        <h3 class="summer-info__title">Роликовые коньки</h3>
+                        <p class="summer-info__text">Широкая размерная линейка, в том числе детские.</p>
+                    </div>
+                </div>
+               
+                <div class="summer-info__items">
+                    <div class="summer-info__item3">
+                        <a class="info__items-link" href="#!"></a>
+                    </div>
+                    <div class="summer-info__items-bottom">
+                        <h3 class="summer-info__title">Самокаты</h3>
+                        <p class="summer-info__text">Электрические самокаты для скоростных прогулок.</p>
+                    </div>
+                </div>
+               
+                <div class="summer-info__items">
+                    <div class="summer-info__item4">
+                        <a class="info__items-link" href="#!"></a>
+                    </div>
+                    <div class="summer-info__items-bottom">
+                        <h3 class="summer-info__title">Детскиее электромобили</h3>
+                        <p class="summer-info__text">Порадуйте своего ребенка поездкой на электромашинке!</p>
+                    </div>
+                </div>
+               
 
-<script src="./swiper/swiper-bundle.min.js"></script>
-<script src="./js/main.js"></script>
+              </div> 
+            </section>
+            <!-- <section class=" section__rent-winter">
+                <h3 class="section__header winter__header"></h3>  
+            </section>
+            <section class="section__services"></section>
+            <section class="section__news"></section>
+            <section class="section__blog"></section>
+            <section class="section__consultation"></section> -->
+        </main>
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

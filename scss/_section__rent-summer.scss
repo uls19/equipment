@@ -1,0 +1,100 @@
+.section__rent-summer {
+    padding-top: 120px;
+    padding-left: calc(50% - 1328px / 2);
+    padding-right: calc(50% - 1328px / 2);
+    border-radius: 50px;
+    height: 981px;
+    background: $w;
+  
+  }
+  
+  .section__header {
+    padding-left: 20px;
+    margin-bottom: 40px;
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 102%;
+    color: $txt-1;
+    background-repeat: no-repeat;
+    background-position: right;
+  
+  }
+  
+  .section__header span {
+    color: $blue;
+  }
+  
+  .summer__header {
+    width: 537px;
+    background-image: url(./../img/sun.svg);
+  }
+
+.section__summer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1328px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.summer-info__item1, 
+.summer-info__item2, 
+.summer-info__item3, 
+.summer-info__item4 {
+    position: relative;
+    height: 234px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.info__items-link {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: $w;
+    background-image: url(./../img/arrow-up-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #efefef;
+      }
+}
+.summer-info__items-bottom {
+    border-radius: 15px;
+    padding: 18px;
+    background: $bg;
+
+}
+.summer-info__title {
+font-family: $font-family;
+font-weight: 600;
+font-size: 18px;
+color: $txt-1;
+}
+.summer-info__text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: $txt-2; 
+}
+.summer-info__item1 {
+    background-image: url(./../img/info__item1.jpg);
+}
+.summer-info__item2 {
+    background-image: url(./../img/info__item2.jpg);   
+}
+.summer-info__item3 {
+    background-image: url(./../img/info__item3.jpg);
+}
+.summer-info__item4 {
+    background-image: url(./../img/info__item4.jpg);
+}
