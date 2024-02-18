@@ -54,15 +54,17 @@
   border-radius: 58px;
   padding: 12px 16px;
   background: $bg;
-  font-family: $font-family;
-  font-weight: 400;
-  font-size: 16px;
-  color: $txt-1;
   transition: background 0.2s ease-in-out;
 
   &:hover {
     background: #efefef;
   }
+}
+.header__link {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  color: $txt-1;
 }
 
 .header__timetable {
