@@ -1,0 +1,136 @@
+.section__services {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(./../img/Vector02.svg);
+    background-repeat: no-repeat;
+    background-position: center top 315px;
+}
+
+.section__services-box {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    max-width: 1328px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section__services-left {
+    width: 374px;
+}
+
+.services__header {
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.services__text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: $txt-2;
+
+}
+
+.section__services-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 793px;
+
+}
+
+.services-info__item1,
+.services-info__item2,
+.services-info__item3,
+.services-info__item4 {
+    position: relative;
+    height: 234px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    &:hover::before {
+        opacity: 1;
+    }
+}
+
+.services-info__item1::before,
+.services-info__item2::before,
+.services-info__item3::before,
+.services-info__item4::before {
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 232px;
+    z-index: 5;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.services-info__items1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.services-info__item1 {
+    background-image: url(./../img/services__item1.jpg);
+}
+
+.services-info__items2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.services-info__item2 {
+    background-image: url(./../img/winter__item2.jpg);
+}
+
+.services-info__items3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.services-info__item3 {
+    background-image: url(./../img/winter__item4.jpg);
+}
+
+.services-info__items4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.services-info__item4 {
+    background-image: url(./../img/winter__item5.jpg);
+}
+
+.services-info__items-bottom {
+    border-radius: 15px;
+    padding: 18px;
+    background: $w;
+}
+
+.services-info__title {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 18px;
+    color: $txt-1;
+}
+
+.services-info__text {
+    padding-top: 6px;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: $txt-2;
+}

@@ -42,6 +42,10 @@ opacity: 0;
 .wrapper {
   margin: 0 auto;
   max-width: 1920px;
-  height: 100vh;
   background: $bg;
+}
+
+.main-wrapper {
+  border-radius: 50px;
+  background-color: $w;
 }

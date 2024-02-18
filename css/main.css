@@ -127,8 +127,12 @@ html, body {
 .wrapper {
   margin: 0 auto;
   max-width: 1920px;
-  height: 100vh;
   background: #f4f6f8;
+}
+
+.main-wrapper {
+  border-radius: 50px;
+  background-color: #fff;
 }
 
 .header {
@@ -299,6 +303,7 @@ html, body {
 }
 
 .header__item-text {
+  padding-top: 6px;
   font-family: "Golos Text", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -311,7 +316,6 @@ html, body {
   padding-left: calc(50% - 664px);
   padding-right: calc(50% - 664px);
   border-radius: 50px;
-  height: 981px;
   background: #fff;
 }
 
@@ -355,8 +359,31 @@ html, body {
   background-repeat: no-repeat;
   background-position: top;
 }
+.summer-info__item1:hover::before,
+.summer-info__item2:hover::before,
+.summer-info__item3:hover::before,
+.summer-info__item4:hover::before {
+  opacity: 1;
+}
 
-.info__items-link {
+.summer-info__item1::before,
+.summer-info__item2::before,
+.summer-info__item3::before,
+.summer-info__item4::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 232px;
+  z-index: 5;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.info__items-icon {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -368,10 +395,7 @@ html, body {
   background-image: url(./../img/arrow-up-right.svg);
   background-repeat: no-repeat;
   background-position: center;
-  transition: background-color 0.2s ease-in-out;
-}
-.info__items-link:hover {
-  background-color: #efefef;
+  z-index: 0;
 }
 
 .summer-info__items-bottom {
@@ -388,6 +412,7 @@ html, body {
 }
 
 .summer-info__text {
+  padding-top: 6px;
   font-family: "Golos Text", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -409,4 +434,371 @@ html, body {
 
 .summer-info__item4 {
   background-image: url(./../img/info__item4.jpg);
+}
+
+.section__rent-winter {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: calc(50% - 664px);
+  padding-right: calc(50% - 664px);
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 -20px 40px -4px rgba(145, 158, 171, 0.12);
+}
+
+.winter__header {
+  width: 544px;
+  background-image: url(./../img/snow.svg);
+}
+
+.section__winter-info {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  max-width: 1328px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.winter-info__item1,
+.winter-info__item2,
+.winter-info__item3,
+.winter-info__item4,
+.winter-info__item5 {
+  position: relative;
+  height: 234px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.winter-info__item1:hover::before,
+.winter-info__item2:hover::before,
+.winter-info__item3:hover::before,
+.winter-info__item4:hover::before,
+.winter-info__item5:hover::before {
+  opacity: 1;
+}
+
+.winter-info__item1::before,
+.winter-info__item2::before,
+.winter-info__item3::before,
+.winter-info__item4::before,
+.winter-info__item5::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 232px;
+  z-index: 5;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.winter-info__items1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.winter-info__item1 {
+  background-image: url(./../img/winter__item1.jpg);
+}
+
+.winter-info__items2 {
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+.winter-info__item2 {
+  background-image: url(./../img/winter__item2.jpg);
+}
+
+.winter-info__items3 {
+  grid-column: 5/7;
+  grid-row: 1/2;
+}
+
+.winter-info__item3 {
+  background-image: url(./../img/winter__item3.jpg);
+}
+
+.winter-info__items4 {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+.winter-info__item4 {
+  background-image: url(./../img/winter__item4.jpg);
+}
+
+.winter-info__items5 {
+  grid-column: 4/7;
+  grid-row: 2/3;
+}
+
+.winter-info__item5 {
+  background-image: url(./../img/winter__item5.jpg);
+}
+
+.winter-info__items-bottom {
+  border-radius: 15px;
+  padding: 18px;
+  background: #f4f6f8;
+}
+
+.winter-info__title {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #161c24;
+}
+
+.winter-info__text {
+  padding-top: 6px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #454f5b;
+}
+
+.section__services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url(./../img/Vector02.svg);
+  background-repeat: no-repeat;
+  background-position: center top 315px;
+}
+
+.section__services-box {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  max-width: 1328px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section__services-left {
+  width: 374px;
+}
+
+.services__header {
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+.services__text {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #454f5b;
+}
+
+.section__services-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 793px;
+}
+
+.services-info__item1,
+.services-info__item2,
+.services-info__item3,
+.services-info__item4 {
+  position: relative;
+  height: 234px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.services-info__item1:hover::before,
+.services-info__item2:hover::before,
+.services-info__item3:hover::before,
+.services-info__item4:hover::before {
+  opacity: 1;
+}
+
+.services-info__item1::before,
+.services-info__item2::before,
+.services-info__item3::before,
+.services-info__item4::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 232px;
+  z-index: 5;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.services-info__items1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.services-info__item1 {
+  background-image: url(./../img/services__item1.jpg);
+}
+
+.services-info__items2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.services-info__item2 {
+  background-image: url(./../img/winter__item2.jpg);
+}
+
+.services-info__items3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.services-info__item3 {
+  background-image: url(./../img/winter__item4.jpg);
+}
+
+.services-info__items4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.services-info__item4 {
+  background-image: url(./../img/winter__item5.jpg);
+}
+
+.services-info__items-bottom {
+  border-radius: 15px;
+  padding: 18px;
+  background: #fff;
+}
+
+.services-info__title {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #161c24;
+}
+
+.services-info__text {
+  padding-top: 6px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #454f5b;
+}
+
+.section__news {
+  padding-bottom: 92px;
+  max-width: 1328px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section__news-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.news__header {
+  margin: 0;
+  padding: 6px 0 0;
+}
+
+.news__button {
+  display: flex;
+  height: 48px;
+  padding-right: 10px;
+}
+
+.news-button-next,
+.news-button-prev {
+  position: relative;
+  border-radius: 15px;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+}
+
+.news-button-next::after,
+.news-button-prev::after {
+  content: "";
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  padding-bottom: 36px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 257px;
+  padding: 24px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.news__slider-title {
+  border-radius: 500px;
+  padding: 6px 12px;
+  width: 110px;
+  height: 29px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  background: #5b7dde;
+  color: #fff;
+  transition: background 0.2s ease-in-out;
+}
+.news__slider-title_small {
+  width: 82px;
+}
+.news__slider-title:hover {
+  background: #345fd9;
+}
+
+.news-info__title {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #161c24;
+}
+
+.news-info__text {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #454f5b;
+}
+
+.news-info__years {
+  padding-top: 24px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: rgba(71, 79, 90, 0.5);
 }/*# sourceMappingURL=main.css.map */
