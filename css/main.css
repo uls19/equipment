@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -804,4 +805,315 @@ html, body {
   font-size: 16px;
   line-height: 120%;
   color: rgba(71, 79, 90, 0.5);
+}
+
+.section__blog {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: calc(50% - 664px);
+  padding-right: calc(50% - 664px);
+  border-radius: 50px;
+  background: #fff;
+}
+
+.blog__header {
+  width: 100px;
+}
+
+.section__blog-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(248px, 270px);
+  gap: 30px;
+  max-width: 1328px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.blog-info__item1,
+.blog-info__item2,
+.blog-info__item3,
+.blog-info__item4 {
+  position: relative;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: background-size 0.3s ease;
+}
+.blog-info__item1:hover::before,
+.blog-info__item2:hover::before,
+.blog-info__item3:hover::before,
+.blog-info__item4:hover::before {
+  opacity: 1;
+}
+
+.blog-info__item1::before,
+.blog-info__item2::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 468px;
+  z-index: 5;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.blog-info__item3::before,
+.blog-info__item4::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 190px;
+  z-index: 5;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.blog-info__items1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.blog-info__item1 {
+  height: 468px;
+  background-image: url(./../img/blog__item1.jpg);
+}
+
+.blog-info__items2 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.blog-info__item2 {
+  height: 468px;
+  background-image: url(./../img/blog__item2.jpg);
+}
+
+.blog-info__items3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.blog-info__item3 {
+  height: 190px;
+  background-image: url(./../img/blog__item3.jpg);
+}
+
+.blog-info__items4 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.blog-info__item4 {
+  height: 190px;
+  background-image: url(./../img/blog__item4.jpg);
+}
+
+.blog-info__items-bottom {
+  min-height: 80px;
+  border-radius: 15px;
+  padding: 18px;
+  background: #f4f6f8;
+}
+.blog-info__items-bottom_little {
+  min-height: 58px;
+}
+
+.blog-info__title {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #161c24;
+}
+
+.blog-info__span {
+  color: #f4f6f8;
+}
+
+.section__consultation {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: calc(50% - 645px);
+  padding-right: calc(50% - 645px);
+}
+
+.consultation__info {
+  display: grid;
+  grid-template-columns: 1fr 342px;
+  align-items: center;
+  border-radius: 20px;
+  column-gap: 32px;
+  padding: 32px;
+  background: #fff;
+}
+
+.consultation__info-left {
+  grid-column: 1/2;
+}
+
+.consultation__title {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #161c24;
+}
+
+.consultation__info-right {
+  padding: 24px;
+  grid-column: 2/3;
+  border-radius: 15px;
+  height: 292px;
+  background: #f4f6f8;
+  background-image: url(./../img/Vector03.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.consultation__right-text {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #454f5b;
+}
+
+.consultation__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 294px;
+  height: 48px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background: #fff;
+  transition: border 0.3s ease;
+}
+
+.consultation__link_blue {
+  margin-top: 24px;
+  color: #229ed9;
+}
+.consultation__link_blue:hover {
+  border: 1px solid #229ed9;
+}
+
+.consultation__link_green {
+  margin-top: 10px;
+  color: #08b419;
+}
+.consultation__link_green:hover {
+  border: 1px solid #08b419;
+}
+
+.form {
+  margin-top: 16px;
+}
+
+.input-wrap {
+  display: flex;
+  column-gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.form .label {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #454f5b;
+}
+.form .label_chek {
+  font-size: 16px;
+  color: #a5b2bf;
+}
+
+.form .phone {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 18px 12px;
+  width: 100%;
+  max-width: 608px;
+  height: 57px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #161c24;
+}
+
+.form .phone::placeholder {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #a5b2bf;
+}
+
+.form .btn {
+  width: 220px;
+  padding: 16px 62px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  border: none;
+  border-radius: 10px;
+  background-color: #5b7dde;
+  color: #fff;
+}
+.form .btn_active {
+  background-color: #345fd9;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  left: -9999px;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("./../img/chekbox.svg");
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
 }/*# sourceMappingURL=main.css.map */

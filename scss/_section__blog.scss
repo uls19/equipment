@@ -1,0 +1,134 @@
+.section__blog {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: calc(50% - 1328px / 2);
+    padding-right: calc(50% - 1328px / 2);
+    border-radius: 50px;
+    background: $w;
+}
+
+.blog__header {
+    width: 100px;
+}
+
+.section__blog-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(248px, 270px);
+    gap: 30px;
+    max-width: 1328px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blog-info__item1,
+.blog-info__item2,
+.blog-info__item3,
+.blog-info__item4 {
+
+    position: relative;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: background-size 0.3s ease;
+   
+    &:hover::before {
+        opacity: 1;
+    }
+}
+
+.blog-info__item1::before,
+.blog-info__item2::before {
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 468px;
+    z-index: 5;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.blog-info__item3::before,
+.blog-info__item4::before {
+
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 190px;
+    z-index: 5;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.blog-info__items1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+}
+
+.blog-info__item1 {
+    height: 468px;
+    background-image: url(./../img/blog__item1.jpg);
+}
+
+.blog-info__items2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.blog-info__item2 {
+    height: 468px;
+    background-image: url(./../img/blog__item2.jpg);
+}
+
+.blog-info__items3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.blog-info__item3 {
+    height: 190px;
+    background-image: url(./../img/blog__item3.jpg);
+}
+
+.blog-info__items4 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.blog-info__item4 {
+    height: 190px;
+    background-image: url(./../img/blog__item4.jpg);
+}
+
+.blog-info__items-bottom {
+    min-height: 80px;
+    border-radius: 15px;
+    padding: 18px;
+    background: $bg;
+
+    &_little {
+        min-height: 58px;
+    }
+}
+
+.blog-info__title {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 18px;
+    color: $txt-1;
+}
+
+.blog-info__span {
+    color: $bg;
+
+}
