@@ -65,6 +65,7 @@
   font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
+  white-space: nowrap;
   color: $txt-1;
 }
 
@@ -107,9 +108,9 @@
 
 .header__box {
   margin-left: 32px;
+  margin-right: 32px;
   border-radius: 20px;
-  width: 740px;
-  height: 324px;
+ max-width: 740px;
   padding: 40px;
   background: $w;
 }
@@ -127,6 +128,7 @@
 }
 
 .header__box-text {
+  padding-top: 8px;
   font-family: $font-family;
   font-weight: 400;
   font-size: 18px;

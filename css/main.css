@@ -201,6 +201,7 @@ html, body {
   font-family: "Golos Text", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  white-space: nowrap;
   color: #161c24;
 }
 
@@ -240,9 +241,9 @@ html, body {
 
 .header__box {
   margin-left: 32px;
+  margin-right: 32px;
   border-radius: 20px;
-  width: 740px;
-  height: 324px;
+  max-width: 740px;
   padding: 40px;
   background: #fff;
 }
@@ -260,6 +261,7 @@ html, body {
 }
 
 .header__box-text {
+  padding-top: 8px;
   font-family: "Golos Text", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1139,6 +1141,7 @@ html, body {
   max-width: 819px;
   padding: 48px;
   margin-left: calc(30% - 230px);
+  margin-right: calc(30% - 230px);
 }
 
 .rental__header {
