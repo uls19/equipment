@@ -187,8 +187,9 @@ html, body {
 }
 
 .header__list {
+  height: 35px;
   border-radius: 58px;
-  padding: 12px 16px;
+  padding: 7px 16px;
   background: #f4f6f8;
   transition: background 0.2s ease-in-out;
 }
@@ -1116,4 +1117,180 @@ html, body {
 /* стили при наведении курсора на checkbox */
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: #b3d7ff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 170px;
+  height: 1060px;
+  background-image: url(./../img/rental.jpg);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 859px;
+}
+
+.rental__info {
+  background: #fff;
+  border-radius: 30px;
+  max-width: 819px;
+  padding: 48px;
+  margin-left: calc(30% - 230px);
+}
+
+.rental__header {
+  font-family: "Onest", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 102%;
+  color: #161c24;
+}
+
+.rental__info-text {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #454f5b;
+}
+.rental__info-text_bold {
+  font-weight: 600;
+}
+.rental__info-text_blue {
+  font-weight: 600;
+  color: #5b7dde;
+}
+
+.footer__menu {
+  padding-left: calc(50% - 664px);
+  padding-right: calc(50% - 664px);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #161c24;
+}
+
+.footer__menu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.logo__title_footer {
+  color: #fff;
+}
+
+.logo__text_footer {
+  color: #fff;
+}
+
+.footer__top-left {
+  display: flex;
+  align-items: center;
+  width: 557px;
+  margin-right: 20px;
+}
+
+.footer__timetable {
+  margin-right: 32px;
+  padding-left: 10px;
+  background-image: url(./../img/Ellipse.svg);
+  background-repeat: no-repeat;
+  background-position: top 6px left;
+  background-size: 5px;
+  font-family: "Golos Text", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f4f6f8;
+  opacity: 0.6;
+}
+
+.footer__location {
+  margin-right: 8px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1;
+}
+
+.footer__location-image {
+  margin-right: 4px;
+  padding: 5px;
+  border-radius: 4px;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  background: rgba(244, 246, 248, 0.2);
+}
+
+.footer__link-maps {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #bdccf7;
+}
+
+.img__up-right {
+  width: 15px;
+  height: 17px;
+  padding: 2px;
+}
+
+.footer__line {
+  margin: 20px;
+  height: 1px;
+  width: auto;
+  background: #fff;
+  opacity: 0.09;
+}
+
+.footer__menu-items {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 12px;
+}
+
+.footer__list {
+  width: 205px;
+  height: 35px;
+  border-radius: 58px;
+  padding: 7px 16px;
+  text-align: center;
+  background: #42484e;
+  transition: background 0.2s ease-in-out;
+}
+.footer__list:hover {
+  background: rgba(255, 255, 255, 0.3490196078);
+}
+
+.footer__link {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.footer__bottom {
+  padding-left: calc(50% - 645px);
+  padding-right: calc(50% - 645px);
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__bottom-text {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f4f6f8;
+  opacity: 0.4;
 }/*# sourceMappingURL=main.css.map */

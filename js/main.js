@@ -62,5 +62,10 @@ btn.addEventListener ("click", btnHandler);
     // });
   }
  
+  const footerYearEl = document.querySelector('.footer__year');
+  let today = new Date();
+  let year = today.getFullYear(); // 2023
+
+  footerYearEl.textContent = year;
 
 
