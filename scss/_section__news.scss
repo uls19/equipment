@@ -105,3 +105,16 @@
     line-height: 120%;
     color: rgba(71, 79, 90, 0.5);
 }
+
+@include X-Mobile {
+    .section__news {
+        padding-bottom: 50px;
+    }
+
+    .news__header {
+        font-size: 28px;
+    }
+    .news__button {
+        display: none;
+    }
+}

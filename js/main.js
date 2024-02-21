@@ -6,12 +6,38 @@ window.addEventListener('load', () => {
 mask.remove();
   }, 600);
   });
-  
+
+  window.onload = function () {
+    /*Nav icon*/
+    const navBtn = document.querySelector('.nav-icon-btn');
+    const navIcon = document.querySelector('.nav-icon');
+    const nav = document.querySelector('.header__menu');
+    
+    navBtn.onclick = function () {
+        navIcon.classList.toggle('nav-icon_active'); 
+        nav.classList.toggle('menu__tablet');
+        document.body.classList.toggle('no-scroll');
+    
+    }
 
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
-    
+
+     // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 575px
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 991px
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  },
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -68,4 +94,4 @@ btn.addEventListener ("click", btnHandler);
 
   footerYearEl.textContent = year;
 
-
+}

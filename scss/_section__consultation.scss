@@ -185,3 +185,75 @@
 .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
     border-color: #b3d7ff;
 }
+
+@include Tablet {
+
+    .consultation__info {
+            grid-template-columns: 1fr;
+            gap: 32px;
+    }
+
+    .consultation__title {
+       font-size: 44px; 
+    }
+    .consultation__info-right {
+        grid-column: 1/2;
+        height: auto;
+    }
+    
+        .consultation__link { 
+            margin-top: 16px;
+            float: left;
+        }
+
+        .consultation__link_blue {
+        margin-right: 16px;
+}
+}
+@include Mobile {
+    .section__consultation {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .consultation__title {
+        font-size: 36px;
+    }
+    }
+@include X-Mobile {
+    .consultation__info {
+        padding: 20px;
+    }
+    .consultation__title {
+        font-size: 28px;
+    }
+
+    .input-wrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    }
+
+    .form .btn {
+        width: 210px;
+    }
+
+    .consultation__info-right {
+        padding: 20px;
+    }
+    .consultation__link {
+        width: auto;
+        max-width: 294px;
+        margin-right: 0;
+    }
+
+    .consultation__link_blue img {
+       padding-left: 20px;
+    }
+
+    .consultation__link_green img {
+        padding-left: 10px;
+     }
+  
+    }
+
+    

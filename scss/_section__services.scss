@@ -134,3 +134,59 @@
     line-height: 120%;
     color: $txt-2;
 }
+
+@include Tablet {
+    .section__services-box {
+        flex-direction: column;
+        gap:20px;
+    }   
+  }
+
+  @include Mobile {
+    .section__services {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+    }
+
+    @include X-Mobile {
+        .section__services-left {
+            width: auto;
+        }
+
+        .services__header {
+            font-size: 28px;
+        }
+
+        .section__services-info {
+            grid-template-columns: 1fr;
+        }
+
+        .services-info__item1,
+        .services-info__item2,
+        .services-info__item3,
+        .services-info__item4 {
+            background-position: top;
+            background-size: cover;
+        }
+
+        .services-info__items1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .services-info__items2 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        
+        .services-info__items3 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        
+        .services-info__items4 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+    }

@@ -55,12 +55,14 @@
   border-radius: 58px;
   padding: 7px 16px;
   background: $bg;
+  text-align: center;
   transition: background 0.2s ease-in-out;
 
   &:hover {
     background: #efefef;
   }
 }
+
 .header__link {
   font-family: $font-family;
   font-weight: 400;
@@ -77,6 +79,11 @@
 
 }
 
+.header__top-right {
+  display: flex;
+  align-items: center;
+}
+
 .header__phone {
   display: flex;
   justify-content: center;
@@ -91,6 +98,15 @@
   &:hover {
     background: #efefef;
   }
+}
+
+.header__nav-btn {
+  display: none;
+  margin-right: 20px;
+}
+
+.nav-icon-btn {
+  --width: 36px;
 }
 
 .header__main {
@@ -110,7 +126,7 @@
   margin-left: 32px;
   margin-right: 32px;
   border-radius: 20px;
- max-width: 740px;
+  max-width: 740px;
   padding: 40px;
   background: $w;
 }
@@ -138,7 +154,7 @@
 
 .header__bottom {
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
   max-width: 1288px;
   margin: 16px auto;
 }
@@ -186,3 +202,86 @@
   color: $txt-2;
 }
 
+@include Desktop {
+  .header__timetable {
+    display: none;
+  }
+}
+
+@include Tablet {
+
+  .no-scroll {
+    overflow-y: hidden;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .header__menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    top: 80px;
+    gap: 12px;
+    background: $w;
+    background-color: rgba(0, 0, 0, 0.414);
+    animation: shows 0.3s;
+
+    @keyframes shows {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  .menu__tablet {
+    display: flex;
+  }
+
+  .header__list {
+    width: 216px;
+  }
+
+  .header__nav-btn {
+    display: block;
+  }
+
+  .header__box-title {
+    font-size: 48px;
+  }
+
+  .header__bottom {
+   flex-direction: column;
+   align-items: center;
+   
+  }
+  .header__items {
+    width: auto;
+    height: auto;
+  
+}
+}
+@include Mobile {
+  .header__box-title {
+  font-size: 42px;
+  }
+}
+
+@include X-Mobile {
+  .header__box {
+    padding: 20px;
+  }
+  .header__box-title {
+  font-size: 30px;
+  }
+}

@@ -126,3 +126,26 @@
     .summer-info__item4 {
         background-image: url(./../img/info__item4.jpg);
     }
+
+    @include Mobile {
+        .section__rent-summer {
+            padding-top: 50px;
+        }
+        }
+
+        @include X-Mobile {
+            .summer__header {
+                width: auto;
+                padding-right: 50px;
+                margin-right: 30px;
+                font-size: 28px;
+            }
+
+            .section__summer-info {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+        }
+    }
+      

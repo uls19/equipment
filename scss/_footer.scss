@@ -183,5 +183,54 @@ color: $light-blue;
 .footer__year {
 }
 
- 
+@include Tablet {
+    .footer {
+        padding-top: 70px;
+    } 
+    .rental__info {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__menu-items {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .footer__top-left {       
+        width: auto;
+    }
+    .footer__timetable {
+        display: none;
+    }
+
+}
+
+@include Mobile {
+    .footer {
+        padding-top: 0px;
+        background-image: none;
+        height: auto;
+    }
+
+    .rental__info {
+        padding: 20px;
+    }
+    
+
+    .footer__top-left {       
+        flex-direction: column;
+    }
+    }
+
+    @include X-Mobile {
+        .rental__header {
+            font-size: 28px;
+        }
+
+       .footer__menu-top { 
+        flex-direction: column;
+        gap: 16px;
+       }
+    }
 
